@@ -1,0 +1,76 @@
+1638189092630	geckodriver	INFO	Listening on 127.0.0.1:51290
+1638189108857	geckodriver	INFO	Listening on 127.0.0.1:51309
+1638189111952	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51310" "-no-remote" "-profile" "C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofilevzl1k9"
+1638189112455	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofilevzl1k9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51310/devtools/browser/df7c0a9c-e499-466e-a36b-748af65c9980
+1638189115374	Marionette	INFO	Listening on port 51315
+1638189115693	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: https://seguridad.espoch.edu.ec/cas/delegatedAuthn/oidc/Institucional?code=0.AQYAEGf41-EBHUaFmXWN5FQuK0G6lD5iKoBFqTHjBM0j_qMGAAA.AQABAAIAAAD--DLA3VO7QrddgJg7WevrGOdKKiFvJIRJRd3rsZBdbkx3Kbh4frC3NXxcv4JnNnZcfCpicFy3lMpZxOUOWLcXngl-JqSnotfjvuwrvmiFJ1NRmUlNhDsj4kzWEpD2jGiKYG9A_em6-GJL-b6Gq8eXbpB-kgAiOba3EAlAGHOBJFqF3HKJKLk76G42_RUMLvoodCKFwBBj4Vqt30US1DB2xTqsNUvgm6Zib0uSY7vu5FsV5WTtLnF2Njcbww6yf9zq1Jc1fO26BWU6oLtxItjAGJthBQmz777SQy8dp4-mgcL3pZ4Lj9gDbX0AKSNymqReklaJc0OLGo3GG-TedJP_0q2ukB9-miktzt4AjMsCJMZTPFhWpc4vSxavDdAMsaVmWcqJnqcBYhg9O4d2ITI0ErFUpGqRzNxW7K1jLLGlWpW61iebaao4rQ8UdMK3yz4oA1HfxxheGp7sy49peCyrq2AA7MYowzuxSZX_DVtJqVcSoREaOKyH1wvQjlnul_uXE0L6pUcFMSWe1ZbogY6JQ7TbyjO8Ey0XyJABYB1GzekZs6wYwKniF74ESjmpSdjhw3qVSfe8mDiKfPKftffke0CgOhdnLIyLtC0u0VKrYNyZB3U74-h2sxzJubP4uDggAA&state=_R39bZq5YBoc_qIc8-aV1wTY8JGzg5wtVJEEWYqPKU8&session_state=ada00727-7c95-4e10-8cfb-f49f0b5e9b12#, line 1: ReferenceError: startIntro is not defined
+SourceActor threw an exception: Error: Failed to fetch https://elearning.espoch.edu.ec/mod/attendance/attendance.php?sessid=270124&sesskey=Jy3th2DEpc. Code 2152398879.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://elearning.espoch.edu.ec/mod/attendance/attendance.php?sessid=270124&sesskey=Jy3th2DEpc. Code 2152398879.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://elearning.espoch.edu.ec/mod/attendance/attendance.php?sessid=270124&sesskey=Jy3th2DEpc. Code 2152398879.
+1638189145636	Marionette	INFO	Stopped listening on port 51315
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638189335259	geckodriver	INFO	Listening on 127.0.0.1:51441
+1638189338322	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51442" "-no-remote" "-profile" "C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofileY8p3A3"
+1638189338807	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofileY8p3A3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51442/devtools/browser/7c10743e-ccd7-4661-b68b-b274ecfbc153
+1638189341263	Marionette	INFO	Listening on port 51450
+1638189341555	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: https://seguridad.espoch.edu.ec/cas/delegatedAuthn/oidc/Institucional?code=0.AQYAEGf41-EBHUaFmXWN5FQuK0G6lD5iKoBFqTHjBM0j_qMGAAA.AQABAAIAAAD--DLA3VO7QrddgJg7WevreWyFY3CAPXNK9mlOkXDgVCpVQ5Q-PAutRafximbZYxnPiTS2CkvSRoWFQZLSOV6sIYk24q28TU0At6w8jRDXesL6KgZ67FnXXcUtP88Bo7Ea2oiO2JzEJP7zs1a0_7Lb2EuVQozYD2O2_Ysjymt-3HJS14eiLKtTIgaXVyO-d-1yHyht5R7zzi4Fzovz1Uhk2W0l1G9IdimvFnmSZSJ68T9Htz4T-h9Alhuj9IxHL0u71N-lhwBY51MOK3HIUN4m2-ePng85aYn-2KHx4OzZkBmjLjRr5mU_DkPn3oBm5-BFxOZ2BJLNJYJk7WJmo4gKZnli9Jnr1ksXt_WzdoRzCxd_6OMgYKTyl_6X2JRPuvlKzYe2dQGMcij20JpIxrBZICJTBj4ThSXSV1kGFgrE7oEx0hbUM8oXgT4vat-hFCfCCL8k02fUnE4SBFFtoru5HS1Zj66ZDfvh5gt1oQ82AQ7wqcj9E53OYip-p9QOFyUdsNFFXgRY7hlYEJfgFqSJILJMF2Omeer37LMbbN8fQvJmX3Oxq3lO9HI3_j3Je1KN3fgkvWHjt11qPyaue05kMMJAXbwUg5LIQwd36jkx1EaWBS8srOpJics0IFpmefcgAA&state=_R39bZq5YBoc_qIc8-aV1wTY8JGzg5wtVJEEWYqPKU8&session_state=39f13a19-6489-443d-a559-0710b37aeb9b#, line 1: ReferenceError: startIntro is not defined
+1638189372471	Marionette	INFO	Stopped listening on port 51450
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390116,name=PContent::Msg_AccumulateChildHistograms) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x39011B,name=PContent::Msg_RecordDiscardedData) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638198186377	geckodriver	INFO	Listening on 127.0.0.1:58983
+1638198189467	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58984" "-no-remote" "-profile" "C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofile5v8KJE"
+1638198189933	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofile5v8KJE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58984/devtools/browser/a5817853-8cb3-4e98-889e-427deb028b65
+1638198192561	Marionette	INFO	Listening on port 58990
+1638198192743	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: https://seguridad.espoch.edu.ec/cas/delegatedAuthn/oidc/Institucional?code=0.AQYAEGf41-EBHUaFmXWN5FQuK0G6lD5iKoBFqTHjBM0j_qMGAAA.AQABAAIAAAD--DLA3VO7QrddgJg7WevrpEPuz_Rn9tSOAfM7XiaBgH-tYCwTA4SU7Y2hb3aH63pctbyvjaTC6IeLWqVh_wYEqXrJg_XAewnbdWMLMmXvGdeD6QmLgxq-xda9JRoYqskEdcpyiFYurt1OClgacwOOElHu70FcMigrePu48sYhO_Yp_2d98AZqjsw1-4td5-0vQOn-14jtdBVQ_kjXcSliBEPQhljuofj6dZMPMgtbIAazJJYKYuShvQYxg9hI0AXzWgoA_VKZeizs798exyKJ4cj930PvOm_iBnoD9PpaElZ3KgC-HPhdeN_ij3XzLiF9U3HjsCiTxlZr64bU2NEr0BqYyp86o1kLodYKGL_EGkYLnPootjQNlyzV3roY8tbmcDZiAkrGcE6IZA2_AhTB2VYM0iD5xlxGBaEztouRCU-biYHPQ7iHEK3q5vJfWX3LFGdvcqQSCI34j4YB2uj_p8DxRmlBn7HmcrPJ41MLNqOIM_DJuKmrsThJuQz8RQPOdu33IkRDj5OQRm1yPu3h02DJVmwbwxMAp4-wDkQwLqwf39T8oc_KPMqVlIHYtda_Fv13dJpE-HKnJ5ziy0t6v7ZTn-wXZfN4--jhold_dYoWKq8AimhHVCdDNsxqW9AgAA&state=_R39bZq5YBoc_qIc8-aV1wTY8JGzg5wtVJEEWYqPKU8&session_state=d6f5d363-7c3e-4b25-8a21-450e655aefa2#, line 1: ReferenceError: startIntro is not defined
+1638198241515	geckodriver	INFO	Listening on 127.0.0.1:59082
+1638198244552	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59083" "-no-remote" "-profile" "C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofile4ycybT"
+1638198245203	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Jeffield\\AppData\\Local\\Temp\\rust_mozprofile4ycybT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59083/devtools/browser/c72627ed-83f2-4bb7-b47b-408f342f6d5e
+1638198247662	Marionette	INFO	Listening on port 59088
+1638198247785	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
