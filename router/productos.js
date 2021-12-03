@@ -1,5 +1,5 @@
 const express = require("express");
-const VerifyToken = require("../middleware/authvalidation");
+const {VerifyToken,VerifyEditorToken} = require("../middleware/authvalidation");
 const Productos = require("../services/productos");
 
 function productos(app)
@@ -14,7 +14,7 @@ function productos(app)
         const resultado = await productosService.createProducto(data)
         respone.status(201).json(resultado)})
 
-    router.get("/",async(request,response)=>{
+    router.get("/",VerifyEditorToken,async(request,response)=>{
         const resultado= await productosService.getProductos()
         response.status(200).json(resultado)})
     

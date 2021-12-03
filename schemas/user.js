@@ -15,7 +15,13 @@ const UsersSchema = new Schema(
         password:{
             type:String,
             require: [true,"Ingrese contraseña"]
+        },
+        rol:
+        {
+            type:String,
+            require: [true,"Ingrese rol"]
         }
+        
 
     }
 )

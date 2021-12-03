@@ -14,10 +14,12 @@ class Usuarios {
         }
     }
 
-    async getUser(id) {
+    async getUser(email) {
         try {
-            const resultado = await UserModel.findById(id);
-            return resultado || {}
+            const resultado = await UserModel.findOne({email}).exec();
+            //console.log("Estes es el resultado",resultado);
+            return resultado || false
+            
         }
         catch (error) {
 
@@ -26,8 +28,9 @@ class Usuarios {
 
     async createUser(data) {
         try {
-            const resultado = await UserModel.create(data);
-            return resultado || {}
+            const usuario_guardado = await UserModel.create(data);
+            console.log("Estos son los usuarios guardados",usuario_guardado);
+            return usuario_guardado || {}
         }
         catch (error) {
 
@@ -45,32 +48,6 @@ class Usuarios {
         }
     }
 
-    async login(email, password, user) {
-        try {
-            const usuario = await UserModel.findOne({ email }).exec()
-            if (usuario)
-            {
-                if (usuario.password === password) 
-                {
-                    const token = jwt.sign({ email, user }, config.secret)
-                    return { token, usuario,success:true };
-                }
-                else
-                {
-                    return {"message":"Contraseña incorrecta!",success:false}
-                }
-                
-            }
-            else
-            {
-                return {"message":"Correo no registrado!"}
-            }
-            
-        }
-        catch (error) {
-            console.log(error)
-        }
-    }
-
+    
 }
 module.exports = Usuarios;

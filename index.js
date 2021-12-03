@@ -1,6 +1,7 @@
 const express = require("express")
 const productos = require("./router/productos")
 const usuarios = require("./router/user") 
+const auth=require("./router/auth")
 const cookies= require("cookie-parser")
 
 //Destructing
@@ -13,6 +14,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cookies())
+auth(app)
 productos(app)
 usuarios(app)
 
