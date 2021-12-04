@@ -1,6 +1,6 @@
 const express = require("express");
 const Usuarios = require("../services/user");
-
+const {VerifyToken,VerifyEditorToken,VerifyAdminToken} = require("../middleware/authvalidation");
 function usuarios(app) {
     const router = express.Router();
     app.use("/usuarios", router)
@@ -17,7 +17,7 @@ function usuarios(app) {
         }
     })
 
-    router.get("/", async (request, response) => {
+    router.get("/",VerifyAdminToken,async (request, response) => {
         try {
             const result = await usuariosService.getUsers();
             response.status(200).json(result);
@@ -48,6 +48,8 @@ function usuarios(app) {
             console.log(error);
         }
     })
+
+    
 
    
 }

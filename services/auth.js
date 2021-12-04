@@ -47,6 +47,25 @@ class Auth {
             console.log(error)
         }
     }
+
+    // change role to users from id
+    async changeRole(id,rol) {
+        try {
+            console.log(id,rol)
+            const usuario = await this.usuarios.updateUser(id,rol);
+            console.log(usuario)
+            if (usuario) {
+                return { usuario, message: "Rol cambiado!", success: true }
+            }
+            else {
+                return { "message": "Fallo al cambiar rol en services" }
+            }
+
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
 }
 
 module.exports = Auth;

@@ -1,5 +1,5 @@
 const express = require("express");
-const {VerifyToken,VerifyEditorToken} = require("../middleware/authvalidation");
+const {VerifyToken,VerifyEditorToken,VerifyAdminToken} = require("../middleware/authvalidation");
 const Productos = require("../services/productos");
 
 function productos(app)

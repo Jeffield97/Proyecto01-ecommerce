@@ -1,4 +1,5 @@
 const express = require("express");
+const { VerifyAdminToken } = require("../middleware/authvalidation");
 const Auth = require("../services/auth");
 
 function auth(app) {
@@ -44,6 +45,30 @@ function auth(app) {
             else
             {
                 response.status(400).json({mensaje:"Fallo al registrar usuario en router"})
+            }
+            //response.status(200).json();
+            
+
+        }
+        catch (error) {
+            console.log(error);
+        }
+    })
+
+    //Router for change rol by id
+    router.put("/changeRol/:id",VerifyAdminToken, async (request, response) => {
+        try {
+            const { id } = request.params
+            const { rol } = request.body
+            const result = await auth_service.changeRole(id,{rol})
+            console.log(result)
+            if (result.success)
+            {
+                response.status(200).json({usuario:result.usuario.user})
+            }
+            else
+            {
+                response.status(400).json({mensaje:"Fallo al cambiar rol en router"})
             }
             //response.status(200).json();
             

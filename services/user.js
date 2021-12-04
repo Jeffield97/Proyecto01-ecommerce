@@ -48,6 +48,15 @@ class Usuarios {
         }
     }
 
+    async updateUser(id, rol) {
+        try {
+            const resultado = await UserModel.findByIdAndUpdate(id, rol);
+            return resultado || {}
+        }
+        catch (error) {
+
+        }
+    }
     
 }
 module.exports = Usuarios;
