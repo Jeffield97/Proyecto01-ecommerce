@@ -1,9 +1,21 @@
 const jwt = require('jsonwebtoken');
 const Usuarios = require('./user');
 const config = require('../config');
+const bcrypt = require('bcrypt');
 
 class Auth {
     usuarios = new Usuarios();
+
+    //hash -> encryp password
+    async hash(password) {
+        const salt = await bcrypt.genSalt(10);
+        return await bcrypt.hash(password, salt);
+    }
+
+    //verify password
+    async verifyPassword(password, password_shash) {
+        return await bcrypt.compare(password, password_shash);
+    }
 
     async login(email, password) {
 
@@ -11,7 +23,8 @@ class Auth {
            const usuario = await this.usuarios.getUser(email);
            //console.log(usuario)
             if (usuario) {
-                if (usuario.password === password) {
+                const verify = await this.verifyPassword(password, usuario.password);
+                if (verify ) {
                     const token = jwt.sign({ email, rol:usuario.rol }, config.secret)
                     return { token, usuario, success: true };
                 }
@@ -30,9 +43,12 @@ class Auth {
         }
     }
 
-    async register(email, password,user,rol) {
+    async register(email, password_shash,user,rol) {
       
         try {
+            //hash password}
+            const password = await this.hash(password_shash);
+            console.log(password)
             const usuario= await this.usuarios.createUser({email, password,user,rol});
             //console.log(usuario)
             if (usuario) {
