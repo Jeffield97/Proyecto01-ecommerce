@@ -17,7 +17,7 @@ function auth(app) {
             const result = await auth_service.login(email, password)
             if (result.success)
             {
-                response.cookie("token",result.token,{httpOnly:true}).status(200).json({usuario:result.usuario.user})
+                response.cookie("token",result.token,{httpOnly:true}).status(200).json({usuario:result.usuario.user,rol:result.usuario.rol})
             }
             else
             {

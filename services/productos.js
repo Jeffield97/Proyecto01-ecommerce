@@ -39,6 +39,18 @@ class Productos
         console.log("Producto eliminado")
         return producto || {};
     }
+    async getPublicationsByUser(userId)
+    {
+        try
+        {
+            const productos=await ProductoModel.find({author:userId});
+            return productos;
+        }
+        catch(error)
+        {
+            console.log(error);
+        }
+    }
 
 }
 

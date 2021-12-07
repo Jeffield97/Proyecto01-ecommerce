@@ -7,9 +7,9 @@ class Auth {
     usuarios = new Usuarios();
 
     //hash -> encryp password
-    async hash(password) {
+    async hash(password_shash) {
         const salt = await bcrypt.genSalt(10);
-        return await bcrypt.hash(password, salt);
+        return await bcrypt.hash(password_shash, salt);
     }
 
     //verify password
@@ -25,7 +25,7 @@ class Auth {
             if (usuario) {
                 const verify = await this.verifyPassword(password, usuario.password);
                 if (verify ) {
-                    const token = jwt.sign({ email, rol:usuario.rol }, config.secret)
+                    const token = jwt.sign({ email, rol:usuario.rol,id:usuario.id }, config.secret)
                     return { token, usuario, success: true };
                 }
                 else {
@@ -48,7 +48,7 @@ class Auth {
         try {
             //hash password}
             const password = await this.hash(password_shash);
-            console.log(password)
+            //console.log("Password hash:",password)
             const usuario= await this.usuarios.createUser({email, password,user,rol});
             //console.log(usuario)
             if (usuario) {

@@ -18,6 +18,10 @@ const productosSchema = new Schema({
         type: String,
         required: false
     },
+    author: {
+        type: mongoose.Types.ObjectId,
+        required: [true, 'El autor es requerido']
+    }
 });
 
  module.exports = mongoose.model('Productos', productosSchema);
